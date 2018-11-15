@@ -26,8 +26,9 @@
     "postversion": "git push && git push --tags",
     "prepublishOnly": "node scripts/release.js"
   },
-  "dependencies": {
-    "oniguruma": "^7.0.0"
+  "peerDependencies": {
+    "oniguruma": "^7.0.0",
+    "onigasm": "^2.1.0"
   },
   "devDependencies": {
     "@types/mocha": "2.2.39",
@@ -36,7 +37,6 @@
     "durations": "^3.4.1",
     "istanbul": "^0.4.4",
     "mocha": "^5.2.0",
-    "onigasm": "^2.1.0",
     "remap-istanbul": "^0.6.4",
     "tslint": "^3.15.1",
     "typescript": "^2.0.8",
